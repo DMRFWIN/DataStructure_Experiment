@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Reverse_List.dir/main.cpp.o  -o Reverse_List 

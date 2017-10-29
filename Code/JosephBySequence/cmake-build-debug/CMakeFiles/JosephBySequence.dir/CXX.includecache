@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmrf/文档/DataStructure/first/JosephBySequence/Adt_List_Sequence.h
+stdio.h
+-
+malloc.h
+-
+iostream
+-
+
+/home/dmrf/文档/DataStructure/first/JosephBySequence/JosephBySequence.h
+Adt_List_Sequence.h
+/home/dmrf/文档/DataStructure/first/JosephBySequence/Adt_List_Sequence.h
+
+/home/dmrf/文档/DataStructure/first/JosephBySequence/main.cpp
+iostream
+-
+Adt_List_Sequence.h
+/home/dmrf/文档/DataStructure/first/JosephBySequence/Adt_List_Sequence.h
+JosephBySequence.h
+/home/dmrf/文档/DataStructure/first/JosephBySequence/JosephBySequence.h
+

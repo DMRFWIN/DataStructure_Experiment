@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ADTList.dir/main.cpp.o  -o ADTList 

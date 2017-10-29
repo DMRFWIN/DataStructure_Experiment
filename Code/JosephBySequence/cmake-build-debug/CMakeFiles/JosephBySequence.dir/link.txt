@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/JosephBySequence.dir/main.cpp.o  -o JosephBySequence 
