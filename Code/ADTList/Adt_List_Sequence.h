@@ -24,6 +24,7 @@ bool InitList(SqList &L) {
         return false;
     }
     L.length = 0;
+    L.listsize=LIST_INIT_SIZE;
     cout << "初始化成功！" << endl;
     return true;
 }
@@ -161,6 +162,7 @@ bool ListInsert(SqList &L, int i, int q) {
             cout << "新增空间失败！" << endl;
             return false;
         }
+        L.listsize+=LISTINCREMENT;
     }
 
     for (int j = L.length - 1; j >= i - 1; --j) {

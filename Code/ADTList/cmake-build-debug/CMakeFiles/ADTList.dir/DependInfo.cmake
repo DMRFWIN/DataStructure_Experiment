@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dmrf/文档/DataStructure/first/ADTList/main.cpp" "/home/dmrf/文档/DataStructure/first/ADTList/cmake-build-debug/CMakeFiles/ADTList.dir/main.cpp.o"
+  "/home/dmrf/文档/DataStructure/first/Code/ADTList/main.cpp" "/home/dmrf/文档/DataStructure/first/Code/ADTList/cmake-build-debug/CMakeFiles/ADTList.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

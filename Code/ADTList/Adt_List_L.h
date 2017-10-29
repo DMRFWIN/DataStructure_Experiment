@@ -38,6 +38,7 @@ bool DestroyList(SqList &L) {
     free(L.head);//销毁头结点
     L.head = NULL;
     L.length = 0;
+    cout<<"销毁成功"<<endl;
     return true;
 }
 
@@ -48,7 +49,7 @@ bool ClearList(SqList &L) {
         free(p);
         p = p->next;
     }
-    L.head = NULL;
+    L.head->next = NULL;
     L.length = 0;
     return true;
 }
@@ -57,6 +58,11 @@ bool ClearList(SqList &L) {
 bool ListEmpty(SqList L) {
     if (L.head == NULL) {
         cout << "链表不存在！" << endl;
+    }
+    if (L.length==0){
+        cout<<"链表为空"<<endl;
+    } else{
+        cout<<"链表不为空"<<endl;
     }
     return L.length == 0;
 }
@@ -93,7 +99,7 @@ int LocateElem(SqList L, int e, bool compare(int a, int b)) {//返回第一个�
     LNode *p = L.head->next;
     for (int i = 0; i < L.length; ++i) {
         if (compare(e, p->date)) {
-            cout << "找到符合条件的元素，位序为：" << i << endl;
+            cout << "找到符合条件的元素,位序为：" << i+1 << endl;
             return i;
         }
         p = p->next;
@@ -121,7 +127,6 @@ bool PriorElem(SqList L, int cur_e, int &pre_e) {//求前驱
     while (q != NULL) {
         if (q->date == cur_e) {
             pre_e = p->date;
-            cout << cur_e << "的前驱为" << pre_e << endl;
             return true;
         }
 
@@ -146,14 +151,13 @@ bool NextElem(SqList L, int cur_e, int &next_e) {
         if (p->date == cur_e) {
             if (q != NULL) {
                 next_e = q->date;
-                cout << cur_e << "的后继为" << next_e << endl;
                 return true;
             } else {
                 cout << cur_e << "无后继" << endl;
                 return false;
             }
         }
-
+     p=q;
     }
     cout << cur_e << "无后继" << endl;
     return false;
@@ -235,6 +239,7 @@ bool ListTraverse(SqList L, bool Visit(int k)) {
     p = L.head->next;
     while (p != NULL) {
         Visit(p->date);
+        p=p->next;
     }
     return true;
 }
