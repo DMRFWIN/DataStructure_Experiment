@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmrf/文档/DataStructure/second/three/Adt_List_Sequence.h
+stdio.h
+-
+malloc.h
+-
+iostream
+-
+
+/home/dmrf/文档/DataStructure/second/three/main.cpp
+iostream
+-
+Adt_List_Sequence.h
+/home/dmrf/文档/DataStructure/second/three/Adt_List_Sequence.h
+
