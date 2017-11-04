@@ -1,4 +1,4 @@
-# Install script for directory: /home/dmrf/文档/DataStructure/second/two
+# Install script for directory: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/two
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dmrf/文档/DataStructure/second/two/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/two/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

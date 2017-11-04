@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dmrf/文档/DataStructure/second/four/Adt_List_L.h
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/Adt_List_L.h
 stdio.h
 -
 malloc.h
@@ -14,9 +14,9 @@ malloc.h
 iostream
 -
 
-/home/dmrf/文档/DataStructure/second/four/main.cpp
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/main.cpp
 iostream
 -
 Adt_List_L.h
-/home/dmrf/文档/DataStructure/second/four/Adt_List_L.h
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/Adt_List_L.h
 

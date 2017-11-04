@@ -54,10 +54,10 @@ RM = /home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dmrf/文档/DataStructure/second/four
+CMAKE_SOURCE_DIR = /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dmrf/文档/DataStructure/second/four/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/four.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/dmrf/文档/DataStructure/second/four/cmake-build-debug
 CMakeFiles/four.dir/all:
 	$(MAKE) -f CMakeFiles/four.dir/build.make CMakeFiles/four.dir/depend
 	$(MAKE) -f CMakeFiles/four.dir/build.make CMakeFiles/four.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dmrf/文档/DataStructure/second/four/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target four"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target four"
 .PHONY : CMakeFiles/four.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/four.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/four.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmrf/文档/DataStructure/second/four/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/four.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmrf/文档/DataStructure/second/four/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/four.dir/rule
 
 # Convenience name for target.

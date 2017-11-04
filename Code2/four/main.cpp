@@ -26,7 +26,7 @@ void Init(SqList &a, SqList &b) {
     InitList(a);
     InitList(b);
     int k = 1;
-    for (int i = 0; i < 20; ++i) {
+    for (int i = 0; i < 25; ++i) {
         if (i % 2 == 0) {
             ListInsert(a, k, i + 1);
         } else {

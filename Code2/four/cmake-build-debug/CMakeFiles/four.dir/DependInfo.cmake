@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dmrf/文档/DataStructure/second/four/main.cpp" "/home/dmrf/文档/DataStructure/second/four/cmake-build-debug/CMakeFiles/four.dir/main.cpp.o"
+  "/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/main.cpp" "/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/four/cmake-build-debug/CMakeFiles/four.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

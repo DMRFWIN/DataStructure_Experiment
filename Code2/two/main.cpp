@@ -22,7 +22,7 @@ int main() {
 
 void Init(SqList &L) {//初始化顺序表
     InitList(L);
-    for (int i = 0; i < 20; ++i) {
+    for (int i = 0; i < 25; ++i) {
         ListInsert(L, i + 1, 20 - i);
     }
 

@@ -1,4 +1,4 @@
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dmrf/文档/DataStructure/second/two
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/two
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/dmrf/文档/DataStructure/second/two/cmake-build-debug
+-- Build files have been written to: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/two/cmake-build-debug

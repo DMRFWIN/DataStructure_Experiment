@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cba41/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cba41.dir/build.make CMakeFiles/cmTC_cba41.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cba41.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_cba41.dir/testCCompiler.c.o   -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_cba41
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba41.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_cba41.dir/testCCompiler.c.o  -o cmTC_cba41 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_013c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_013c3.dir/build.make CMakeFiles/cmTC_013c3.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_013c3.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_013c3.dir/testCCompiler.c.o   -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_013c3
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_013c3.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_013c3.dir/testCCompiler.c.o  -o cmTC_013c3 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_58c8d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_58c8d.dir/build.make CMakeFiles/cmTC_58c8d.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o   -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_58c8d
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c8d.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o  -o cmTC_58c8d 
+Run Build Command:"/usr/bin/make" "cmTC_43159/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43159.dir/build.make CMakeFiles/cmTC_43159.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o   -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_43159
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43159.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o  -o cmTC_43159 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58c8d' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7MNcSk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_58c8d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_43159' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdPai8w.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_43159 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_58c8d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_58c8d.dir/build.make CMakeFiles/cmTC_58c8d.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o   -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_58c8d]
-  ignore line: [/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c8d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o  -o cmTC_58c8d ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_43159/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_43159.dir/build.make CMakeFiles/cmTC_43159.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o   -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_43159]
+  ignore line: [/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43159.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o  -o cmTC_43159 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58c8d' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7MNcSk.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_58c8d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_43159' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdPai8w.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_43159 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc7MNcSk.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccdPai8w.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_58c8d] ==> ignore
+    arg [cmTC_43159] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_58c8d.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_43159.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -152,17 +152,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_37543/fast"
-/usr/bin/make -f CMakeFiles/cmTC_37543.dir/build.make CMakeFiles/cmTC_37543.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_37543.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_37543.dir/feature_tests.c.o   -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_37543
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37543.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_37543.dir/feature_tests.c.o  -o cmTC_37543 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_46c66/fast"
+/usr/bin/make -f CMakeFiles/cmTC_46c66.dir/build.make CMakeFiles/cmTC_46c66.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46c66.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_46c66.dir/feature_tests.c.o   -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_46c66
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c66.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_46c66.dir/feature_tests.c.o  -o cmTC_46c66 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -172,17 +172,17 @@ make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-b
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a0097/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a0097.dir/build.make CMakeFiles/cmTC_a0097.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a0097.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_a0097.dir/feature_tests.c.o   -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_a0097
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0097.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_a0097.dir/feature_tests.c.o  -o cmTC_a0097 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_2899c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2899c.dir/build.make CMakeFiles/cmTC_2899c.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2899c.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_2899c.dir/feature_tests.c.o   -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2899c
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2899c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_2899c.dir/feature_tests.c.o  -o cmTC_2899c 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -192,17 +192,17 @@ make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-b
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_55153/fast"
-/usr/bin/make -f CMakeFiles/cmTC_55153.dir/build.make CMakeFiles/cmTC_55153.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_55153.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_55153.dir/feature_tests.c.o   -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_55153
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55153.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_55153.dir/feature_tests.c.o  -o cmTC_55153 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ce7ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ce7ce.dir/build.make CMakeFiles/cmTC_ce7ce.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce7ce.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_ce7ce.dir/feature_tests.c.o   -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ce7ce
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce7ce.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_ce7ce.dir/feature_tests.c.o  -o cmTC_ce7ce 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -210,30 +210,30 @@ make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-b
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8e427/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8e427.dir/build.make CMakeFiles/cmTC_8e427.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8e427.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_8e427.dir/testCXXCompiler.cxx.o -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_8e427
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e427.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_8e427.dir/testCXXCompiler.cxx.o  -o cmTC_8e427 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_12066/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12066.dir/build.make CMakeFiles/cmTC_12066.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12066.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_12066.dir/testCXXCompiler.cxx.o -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_12066
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12066.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_12066.dir/testCXXCompiler.cxx.o  -o cmTC_12066 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4d51d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4d51d.dir/build.make CMakeFiles/cmTC_4d51d.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_4d51d
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d51d.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4d51d 
+Run Build Command:"/usr/bin/make" "cmTC_534ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_534ed.dir/build.make CMakeFiles/cmTC_534ed.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_534ed
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_534ed.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_534ed 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -243,23 +243,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4d51d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHeKbbi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4d51d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_534ed' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKKf4YI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_534ed /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4d51d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4d51d.dir/build.make CMakeFiles/cmTC_4d51d.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_4d51d]
-  ignore line: [/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d51d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4d51d ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_534ed/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_534ed.dir/build.make CMakeFiles/cmTC_534ed.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o -c /home/dmrf/Soft/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_534ed]
+  ignore line: [/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_534ed.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_534ed ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -269,13 +269,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4d51d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHeKbbi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4d51d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_534ed' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKKf4YI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_534ed /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccHeKbbi.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccKKf4YI.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -292,7 +292,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4d51d] ==> ignore
+    arg [cmTC_534ed] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_4d51d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_534ed.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -334,17 +334,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7c05d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7c05d.dir/build.make CMakeFiles/cmTC_7c05d.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7c05d.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_7c05d.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7c05d
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c05d.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_7c05d.dir/feature_tests.cxx.o  -o cmTC_7c05d 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_918dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_918dc.dir/build.make CMakeFiles/cmTC_918dc.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_918dc.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_918dc.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_918dc
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_918dc.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_918dc.dir/feature_tests.cxx.o  -o cmTC_918dc 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -407,17 +407,17 @@ make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-b
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fda64/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fda64.dir/build.make CMakeFiles/cmTC_fda64.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fda64.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_fda64.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_fda64
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fda64.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_fda64.dir/feature_tests.cxx.o  -o cmTC_fda64 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cd0b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd0b5.dir/build.make CMakeFiles/cmTC_cd0b5.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cd0b5.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_cd0b5.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cd0b5
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd0b5.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_cd0b5.dir/feature_tests.cxx.o  -o cmTC_cd0b5 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -480,17 +480,17 @@ make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-b
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6c6c8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6c6c8.dir/build.make CMakeFiles/cmTC_6c6c8.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6c6c8.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_6c6c8.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_6c6c8
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c6c8.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_6c6c8.dir/feature_tests.cxx.o  -o cmTC_6c6c8 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_692aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_692aa.dir/build.make CMakeFiles/cmTC_692aa.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_692aa.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_692aa.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_692aa
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_692aa.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_692aa.dir/feature_tests.cxx.o  -o cmTC_692aa 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -553,17 +553,17 @@ make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-b
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_508c8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_508c8.dir/build.make CMakeFiles/cmTC_508c8.dir/build
-make[1]: Entering directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_508c8.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_508c8.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_508c8
-/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_508c8.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_508c8.dir/feature_tests.cxx.o  -o cmTC_508c8 
-make[1]: Leaving directory '/home/dmrf/文档/DataStructure/second/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fbaf2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fbaf2.dir/build.make CMakeFiles/cmTC_fbaf2.dir/build
+make[1]: Entering directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fbaf2.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_fbaf2.dir/feature_tests.cxx.o -c /home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_fbaf2
+/home/dmrf/Soft/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbaf2.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_fbaf2.dir/feature_tests.cxx.o  -o cmTC_fbaf2 
+make[1]: Leaving directory '/home/dmrf/文档/DataStructure/DataStructExperiment/Code2/three/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
