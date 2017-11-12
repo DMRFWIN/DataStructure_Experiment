@@ -27,7 +27,7 @@ bool InitQueue(LinkQueue &Q) {
         return false;
     }
 
-    Q.size=0;
+    Q.size = 0;
     Q.front->next = NULL;
     return true;
 }
@@ -44,7 +44,7 @@ bool DestroyQueue(LinkQueue &Q) {
         free(p);
     }
     Q.front = Q.rear = NULL;
-    Q.size=0;
+    Q.size = 0;
     cout << "销毁队列成功～" << endl;
     return true;
 }
@@ -55,7 +55,7 @@ bool ClearQueue(LinkQueue &Q) {
         return false;
     }
     Q.rear = Q.front;
-    Q.size=0;
+    Q.size = 0;
     cout << "清空队列成功～" << endl;
     return true;
 }
@@ -79,7 +79,7 @@ int QueueLength(LinkQueue Q) {
         return -1;
     }
 
-    cout<<"当前队列长度为："<<Q.size<<endl;
+    cout << "当前队列长度为：" << Q.size << endl;
     return Q.size;
 }
 
@@ -88,8 +88,8 @@ bool GetHead(LinkQueue Q, int &e) {
         cout << "队列尚未创建，无法获取队队头！" << endl;
         return -1;
     }
-    if(Q.front==Q.rear){
-        cout<<"队列为空，无法获取队头！"<<endl;
+    if (Q.front == Q.rear) {
+        cout << "队列为空，无法获取队头！" << endl;
         return false;
     }
     e = Q.front->next->data;
@@ -112,10 +112,10 @@ bool EnQueue(LinkQueue &Q, int e) {
     /*
      * 因为插入第一个元素时Q.front=Q.rear,所以第一次元素入队时相当于Q.front->next=q;
      */
-    Q.rear->next= q;
-    Q.rear=q;
+    Q.rear->next = q;
+    Q.rear = q;
     Q.size++;
-    cout<<"入队成功～"<<endl;
+    cout << "入队成功～" << endl;
     return true;
 
 }
@@ -156,7 +156,7 @@ bool QueueTraverse(LinkQueue Q) {
         p = p->next;
     }
 
-    cout<<endl;
+    cout << endl;
     return true;
 
 

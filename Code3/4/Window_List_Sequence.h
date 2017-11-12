@@ -14,7 +14,7 @@ typedef struct {
     int y1;
     int x2;
     int y2;
-    int index;
+    int index;//窗口对应的顺序index
 } Win;
 
 typedef struct {

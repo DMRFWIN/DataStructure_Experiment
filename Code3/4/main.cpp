@@ -62,7 +62,7 @@ void ChangeWindows(SqList S, int x, int y, int n) {
 
 }
 
-bool IsInWindow(Win e, int x, int y) {
+bool IsInWindow(Win e, int x, int y) {//判断坐标是否在窗口内
     if ((x >= e.x1 && x <= e.x2) && (y >= e.y1 && y <= e.y2)) {
         return true;
     }
