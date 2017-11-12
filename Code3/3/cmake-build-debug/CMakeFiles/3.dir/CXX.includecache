@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code3/3/CircleQueue.h
+iostream
+-
+
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code3/3/main.cpp
+iostream
+-
+iostream
+-
+CircleQueue.h
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code3/3/CircleQueue.h
+

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code3/2/ADTQueue.h
+iostream
+-
+
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code3/2/main.cpp
+iostream
+-
+ADTQueue.h
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code3/2/ADTQueue.h
+
