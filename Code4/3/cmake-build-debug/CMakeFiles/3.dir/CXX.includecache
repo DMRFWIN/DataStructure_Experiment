@@ -17,4 +17,14 @@ cmath
 -
 MyStack.h
 /home/dmrf/文档/DataStructure/DataStructExperiment/Code4/3/MyStack.h
+iostream
+-
+iomanip
+-
+string.h
+-
+math.h
+-
+stdlib.h
+-
 

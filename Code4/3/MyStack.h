@@ -20,6 +20,7 @@ typedef struct {
 typedef struct {
     Coord *base;//栈底
     Coord *top;//栈顶
+    int length;
     int stacksize;//栈已分配的存储空间
 } SqStack;
 
@@ -30,8 +31,10 @@ bool InitStack(SqStack &S) {
         return false;
     }
 
+
     S.top = S.base;
     S.stacksize = STACK_INIT_SIZE;
+    S.length = 0;
     cout << "初始化栈成功～" << endl;
     return true;
 
@@ -95,6 +98,7 @@ bool GetTop(SqStack S, Coord &e) {
 bool Push(SqStack &S, Coord e) {
     *S.top = e;
     S.top++;
+    S.length++;
     return true;
 }
 
@@ -103,11 +107,12 @@ Coord Pop(SqStack &S) {
     S.top--;
     e.y = (*S.top).y;
     e.x = (*S.top).x;
-
+    S.length--;
     return e;
 }
-bool Full(SqStack S){
-    return StackLength(S)==STACK_INIT_SIZE;
+
+bool Full(SqStack S) {
+    return StackLength(S) == STACK_INIT_SIZE;
 }
 
 bool StackTraverse(SqStack S) {
@@ -137,10 +142,10 @@ bool StackEmpty(SqStack S) {
         return false;
     }
     if (S.top != S.base) {
-    //    cout << "该栈不为空～" << endl;
+        //    cout << "该栈不为空～" << endl;
         return false;
     }
-  //cout << "该栈为空～" << endl;
+    //cout << "该栈为空～" << endl;
     return true;
 }
 

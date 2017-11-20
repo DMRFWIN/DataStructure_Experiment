@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
@@ -9,22 +8,26 @@ using namespace std;
 int n = 0;
 #define N 8
 
+void Search(SqStack s);
 
 void Recursive(SqStack &S, int y);
 
 bool judge(SqStack S, int x, int y);
 
+int num = 0;
+
+
 int main() {
 
     SqStack S;
     InitStack(S);
-
-
-    Recursive(S, 1);
-    cout << "n:" << n << endl;
-
+    Search(S);
+    cout << endl;
     DestroyStack(S);
+
+    cout << num << endl;
     return 0;
+
 }
 
 
@@ -69,4 +72,56 @@ bool judge(SqStack S, int x, int y) {
     }
 
     return true;//如果可以返回true
+}
+
+void Search(SqStack s) {
+
+    int i = 1;
+    bool flag;
+
+    Coord e;
+    e.x = 0;
+    e.y = 1;
+
+    while (i <= 8) {
+
+        if (flag) {
+            e.x = 0;
+        }
+        if (Full(s)) {
+            e = Pop(s);
+
+        }
+        flag = false;
+
+        for (int j = e.x + 1; j <= 8; j++) {
+            if (judge(s, j, i)) {
+                Coord e2;
+                e2.x = j;
+                e2.y = i;
+                Push(s, e2);
+                //  cout << "a" << i << "(" << e.y << "," << e.x << ") ";
+                flag = true;
+                break;
+            }
+        }
+
+
+        if (flag) {
+            if (i == 8) {
+                StackTraverse(s);
+                num++;
+
+            } else {
+                i++;
+            }
+        } else {
+            i--;
+            e = Pop(s);
+            if (i == 0) {
+                break;
+            }
+        }
+
+    }
 }
