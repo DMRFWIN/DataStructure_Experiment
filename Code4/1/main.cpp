@@ -109,10 +109,6 @@ void InputTsMatrix(TsMatrix t, int *num, int *cpot, TsMatrix m) {
         m.data[index].h = t.data[j].l;
         m.data[index].val = t.data[j].val;
 
-        /*m.data[cpot[t.data[j].l] - 1].l = t.data[j].h;
-        m.data[cpot[t.data[j].l] - 1].h = t.data[j].l;
-        */
-
         cpot[temp_l]++;
     }
 

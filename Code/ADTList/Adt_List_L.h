@@ -31,9 +31,11 @@ bool InitList(SqList &L) {
 
 bool DestroyList(SqList &L) {
     LNode *p = L.head->next;
+    LNode *q=p->next;
     while (p != NULL) {
         free(p);
-        p = p->next;
+        p = q;
+        q=p->next;
     }
     free(L.head);//销毁头结点
     L.head = NULL;
