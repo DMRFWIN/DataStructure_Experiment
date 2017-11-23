@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code5/2/BiTree.h
+queue
+-
+stack
+-
+iostream
+-
+cmath
+-
+
 /home/dmrf/文档/DataStructure/DataStructExperiment/Code5/2/main.cpp
 iostream
 -
+BiTree.h
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code5/2/BiTree.h
 

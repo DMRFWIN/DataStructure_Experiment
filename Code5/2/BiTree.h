@@ -4,22 +4,29 @@
 
 #ifndef INC_1_BITREE_H
 #define INC_1_BITREE_H
+#define TElemType int
 
 #include <queue>
 #include <stack>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 
-typedef struct {
+typedef struct BiNode {
     struct BiNode *lchild;
     struct BiNode *rchild;
-    BiNode *parent;
+    struct BiNode *parent;
     int data;
 } BiNode, *BiTree;
 
+int Depth(BiTree biTree);
+
+void LevelOrderTraversePrint(BiTree biTree, int depth);
+
 void InitBitree(BiTree &biTree) {
+    biTree = new BiNode();
     biTree->lchild = NULL;
     biTree->rchild = NULL;
     biTree->parent = NULL;
@@ -28,186 +35,116 @@ void InitBitree(BiTree &biTree) {
 }
 
 void DestroyBiTree(BiTree biTree) {
-    if (biTree->rchild != NULL) {
-        DestroyBiTree(biTree->rchild);
-    } else {
-        free(biTree);
-    }
 
+    if (biTree == NULL) {
+        return;
+    }
     if (biTree->lchild != NULL) {
         DestroyBiTree(biTree->lchild);
-    } else {
-        free(biTree);
     }
 
-    cout << "销毁成功～" << endl;
-}
-
-
-bool CreateBiTree(BiTree biTree) {
-    biTree = new BiNode();
-    biTree->rchild = NULL;
-    biTree->rchild = NULL;
-    biTree->data = NULL;
-    biTree->parent = NULL;
-    return true;
-}
-
-
-void ClearBiTree(BiTree biTree) {
     if (biTree->rchild != NULL) {
-        ClearBiTree(biTree->rchild);
-    } else {
-        biTree->data = 0;
-
+        DestroyBiTree(biTree->rchild);
     }
 
-    if (biTree->lchild != NULL) {
-        ClearBiTree(biTree->lchild);
-    } else {
-        biTree->data = 0;
-    }
-
-    cout << "清空成功～" << endl;
-
+   // cout << "销毁" << biTree->data << "成功～" << endl;
+    free(biTree);
 }
 
-bool BiTreeEmpty(BiTree biTree) {
-    if (biTree != NULL) {
-        if (biTree->lchild == NULL && biTree->rchild == NULL && biTree->data == NULL) {
-            cout << "该数为空～" << endl;
-            return true;
+
+
+
+
+
+bool InstertChild(BiTree biTree, BiNode *e, int LR, BiTree c) {
+    queue<BiNode *> queue1;
+    queue1.push(biTree);
+    BiNode *biNode;
+    biNode = queue1.front();
+    queue1.pop();
+    if (biNode == e) {
+
+        if (LR == 1) {//插入右边
+            BiNode *q = biNode->rchild;
+            biNode->rchild = c;
+            c->parent = biNode;
+            c->rchild = q;
         } else {
-            cout << "该数不为空～" << endl;
-            return false;
+
+            BiNode *q = biNode->lchild;
+            biNode->lchild = c;
+            c->parent = biNode;
+            c->lchild = q;
         }
+
+        return true;
+    }
+
+
+    while (biNode != NULL) {
+
+        if (biNode->lchild != NULL) {
+            queue1.push(biNode->lchild);
+        }
+
+        if (biNode->rchild != NULL) {
+            queue1.push(biNode->rchild);
+        }
+
+        biNode = queue1.front();
+        queue1.pop();
+        if (biNode == e) {
+            if (LR == 1) {//插入右边
+                BiNode *q = biNode->rchild;
+                biNode->rchild = c;
+                c->parent = biNode;
+                c->rchild = q;
+            } else {
+
+                BiNode *q = biNode->lchild;
+                biNode->lchild = c;
+                c->parent = biNode;
+                c->lchild = q;
+            }
+            return true;
+        }
+    }
+
+    cout << "没找到节点p" << endl;
+    return false;
+
+
+}
+
+
+
+void LevelOrderTraverse(BiTree biTree) {
+    for (int i = 1; i <= Depth(biTree); ++i) {
+        LevelOrderTraversePrint(biTree, i);
+    }
+
+
+}
+
+void LevelOrderTraversePrint(BiTree biTree, int depth) {
+    if (biTree == NULL) {
+        cout << "该树为空，无法遍历！" << endl;
+    }
+    if (depth == 1) {
+        cout << biTree->data << " ";
+        return;
     } else {
-        cout << "该树不存在，无法判空！" << endl;
-    }
-
-}
-
-int BiTreeDepth(BiTree biTree) {
-    if (biTree == NULL) {
-        cout << "该树为空，无法求深度！" << endl;
-    }
-
-    int depth = 0;
-    if (biTree->rchild != NULL) {
-        depth += BiTreeDepth(biTree->rchild);
-    }
-
-    if (biTree->lchild != NULL) {
-        depth += BiTreeDepth(biTree->lchild);
-    }
-    if (biTree->lchild == NULL && biTree->rchild == NULL) {
-        depth = 1;
-    }
-
-    return depth;
-}
-
-
-BiNode Root(BiTree biTree) {
-    if (biTree == NULL) {
-        cout << "该树不存在！" << endl;
-    }
-
-    return *biTree;
-}
-
-
-BiNode Value(BiTree biTree, BiNode e) {
-
-    queue<BiNode> queue1;
-    queue1.push(*biTree);
-    BiNode *biNode;
-    *biNode = queue1.front();
-    queue1.pop();
-    cout << biNode->data << " ";
-
-
-    while (biNode != NULL) {
-
-        BiNode *biNode2 = reinterpret_cast<BiNode *>(biNode->lchild);
-        if (biNode->lchild != NULL) {
-            queue1.push(*biNode2);
+        if (biTree->lchild != NULL) {
+            LevelOrderTraversePrint(biTree->lchild, depth - 1);
         }
 
-        if (biNode->rchild != NULL) {
-            BiNode *biNode1 = reinterpret_cast<BiNode *>(biNode->rchild);
-            queue1.push(*biNode1);
-        }
 
-        *biNode = queue1.front();
-        queue1.pop();
-        if (biNode->rchild == e.rchild && biNode->lchild == e.lchild && biNode->parent == e.parent) {
-            return *biNode;
+        if (biTree->rchild != NULL) {
+            LevelOrderTraversePrint(biTree->rchild, depth - 1);
         }
-
     }
 
-}
 
-
-void Assign(BiTree biTree, BiNode &e, BiTree value) {
-    queue<BiNode> queue1;
-    queue1.push(*biTree);
-    BiNode *biNode;
-    *biNode = queue1.front();
-    queue1.pop();
-    cout << biNode->data << " ";
-
-
-    while (biNode != NULL) {
-
-        BiNode *biNode2 = reinterpret_cast<BiNode *>(biNode->lchild);
-        if (biNode->lchild != NULL) {
-            queue1.push(*biNode2);
-        }
-
-        if (biNode->rchild != NULL) {
-            BiNode *biNode1 = reinterpret_cast<BiNode *>(biNode->rchild);
-            queue1.push(*biNode1);
-        }
-
-        *biNode = queue1.front();
-        queue1.pop();
-        if (biNode->rchild == e.rchild && biNode->lchild == e.lchild && biNode->parent == e.parent) {
-            biNode->data = e.data;
-        }
-
-    }
-}
-
-BiNode Parent(BiTree biTree, BiNode e) {
-    queue<BiNode> queue1;
-    queue1.push(*biTree);
-    BiNode *biNode;
-    *biNode = queue1.front();
-    queue1.pop();
-    cout << biNode->data << " ";
-
-
-    while (biNode != NULL) {
-
-        BiNode *biNode2 = reinterpret_cast<BiNode *>(biNode->lchild);
-        if (biNode->lchild != NULL) {
-            queue1.push(*biNode2);
-        }
-
-        if (biNode->rchild != NULL) {
-            BiNode *biNode1 = reinterpret_cast<BiNode *>(biNode->rchild);
-            queue1.push(*biNode1);
-        }
-
-        *biNode = queue1.front();
-        queue1.pop();
-        if (biNode->rchild == e.rchild && biNode->lchild == e.lchild && biNode->parent == e.parent) {
-            return *biNode->parent;
-        }
-
-    }
 }
 
 
@@ -222,7 +159,7 @@ void InOrderTraverse2(BiTree biTree) {
     while (biNode != NULL || !stack1.empty()) {
         if (biNode != NULL) {
             stack1.push(biNode);
-            biNode=biNode->lchild;
+            biNode = biNode->lchild;
         } else {
             biNode = stack1.top();
             stack1.pop();
@@ -269,7 +206,7 @@ void LevelOrderTraverse2(BiTree biTree) {
     queue1.push(biTree);
     BiNode *biNode;
 
-    while (biNode != NULL&&!queue1.empty()) {
+    while (biNode != NULL && !queue1.empty()) {
 
         biNode = queue1.front();
         queue1.pop();
@@ -282,8 +219,6 @@ void LevelOrderTraverse2(BiTree biTree) {
         if (biNode->rchild != NULL) {
             queue1.push(biNode->rchild);
         }
-
-
 
     }
 
@@ -309,7 +244,24 @@ void PreOrderTraverse2(BiTree biTree) {//先序遍历
             stack1.push(biNode->lchild);
         }
 
+
     }
+
+
 }
 
+int Depth(BiTree biTree) {
+
+    if (biTree == NULL) {
+        return 0;
+    }
+
+    int u = Depth(biTree->lchild);
+    int v = Depth(biTree->rchild);
+
+    return u > v ? u + 1 : v + 1;
+}
+
+
 #endif //INC_1_BITREE_H
+
