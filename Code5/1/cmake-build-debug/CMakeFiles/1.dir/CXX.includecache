@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code5/1/BiTree.h
+queue
+-
+stack
+-
+iostream
+-
+cmath
+-
+
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code5/1/main.cpp
+iostream
+-
+BiTree.h
+/home/dmrf/文档/DataStructure/DataStructExperiment/Code5/1/BiTree.h
+
