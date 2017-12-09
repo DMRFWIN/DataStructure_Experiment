@@ -105,6 +105,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -149,12 +150,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512652772006</updated>
       <workItem from="1512652774384" duration="1312000" />
-      <workItem from="1512782652866" duration="2209000" />
+      <workItem from="1512782652866" duration="2478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3521000" />
+    <option name="totallyTimeSpent" value="3790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="239" width="1368" height="780" extended-state="6" />

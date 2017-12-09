@@ -114,7 +114,7 @@ char FirstAdjVex(MGraph G, char v) {
     } else {
         for (int j = 1; j < G.vexnum; ++j) {
             if (G.arcs[i][j].adj != -1) {
-                cout << v << "的第一个邻接顶点是" << G.vexs[j] << endl;
+                //cout << v << "的第一个邻接顶点是" << G.vexs[j] << endl;
                 return G.vexs[j];
             }
         }
@@ -122,6 +122,25 @@ char FirstAdjVex(MGraph G, char v) {
 
     cout << v << "没有邻顶点～" << endl;
     return NULL;
+}
+
+//返回v的第一个邻接顶点
+int FirstAdjVex2(MGraph G, char v) {
+    int i = LocateVex(G, v);
+    if (i < 1 || i > G.vexnum) {
+        cout << v << "不在图中！" << endl;
+        return NULL;
+    } else {
+        for (int j = 1; j < G.vexnum; ++j) {
+            if (G.arcs[i][j].adj != -1) {
+                //cout << v << "的第一个邻接顶点是" << G.vexs[j] << endl;
+                return j;
+            }
+        }
+    }
+
+   // cout << v << "没有邻顶点～" << endl;
+    return -1;
 }
 
 //u是v的一个邻接点，寻找v的下一个邻接点并返回
@@ -147,6 +166,33 @@ char NextAdjVex(MGraph G, char v, char u) {
 
             cout << "没有下一个临邻接点～" << endl;
             return NULL;
+        }
+    }
+}
+
+//u是v的一个邻接点，寻找v的下一个邻接点并返回
+int NextAdjVex2(MGraph G, char v, char u) {
+    int i = LocateVex(G, v);
+    if (i < 1 || i > G.vexnum) {
+        cout << v << "不在图中！" << endl;
+        return NULL;
+    } else {
+        int j = LocateVex(G, u);
+        if (j == -1) {
+           // cout << u << "不在图中！" << endl;
+            return -1;
+        }
+        if (G.arcs[i][j].adj == -1) {
+            cout << v << "和" << u << "不邻接！" << endl;
+        } else {
+            for (int k = j + 1; k <= G.vexnum; ++k) {
+                if (G.arcs[i][k].adj != 0 && G.arcs[i][k].adj != -1) {
+                    return k;
+                }
+            }
+
+         //   cout << "没有下一个临邻接点～" << endl;
+            return -1;
         }
     }
 }
@@ -262,12 +308,16 @@ void DFSTraverse(MGraph G) {
 void DFS(MGraph G, int v) {
 
     char c = GetVex(G, v);
-    cout << c << "";
-    for (int f = FirstAdjVex(G, c); f > 0; f = NextAdjVex(G, GetVex(G, v), GetVex(G, f))) {
-
-        if (!Visited[v]) {
+    cout << c << " ";
+    Visited[v]=true;
+    for (int f = FirstAdjVex2(G, c); f > 0; ){
+        if (!Visited[f]) {
             DFS(G, f);
+
         }
+
+        char k=GetVex(G,f);
+        f = NextAdjVex2(G, c, k);
     }
 
 }
@@ -281,7 +331,7 @@ void BFDTraverse(MGraph G) {
         Visited[i] = false;
     }
 
-    for (int j = 1; j < G.vexnum; ++j) {
+    for (int j = 1; j <= G.vexnum; ++j) {
         if (!Visited[j]) {
             cout << GetVex(G, j) << " ";
             q.push(GetVex(G, j));
@@ -290,7 +340,7 @@ void BFDTraverse(MGraph G) {
                 q.pop();
                 int l = LocateVex(G, c);
 
-                for (int w = FirstAdjVex(G, c); w > 0; w = NextAdjVex(G, c, GetVex(G, w))) {
+                for (int w = FirstAdjVex2(G, c); w > 0; w = NextAdjVex2(G, c, GetVex(G, w))) {
                     if (!Visited[w]) {
                         cout << GetVex(G, w) << " ";
                         Visited[w] = true;

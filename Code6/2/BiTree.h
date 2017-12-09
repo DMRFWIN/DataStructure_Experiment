@@ -26,7 +26,6 @@ typedef struct BiNode {
     struct BiNode *parent;
     int v = 0;
     char c = NULL;
-    bool flag=false;
 } BiNode, *BiTree;
 
 int Depth(BiTree biTree);
@@ -65,13 +64,12 @@ void PreOrderTraverse(BiTree biTree, string s) {//先序遍历
         cout << biTree->c << " " << s << endl;
     }
     if (biTree->lchild != NULL) {
-        s += "0";
-        PreOrderTraverse(biTree->lchild, s);
+        PreOrderTraverse(biTree->lchild, s+"0");
+
     }
 
     if (biTree->rchild != NULL) {
-        s += "1";
-        PreOrderTraverse(biTree->rchild, s);
+        PreOrderTraverse(biTree->rchild, s+"1");
     }
 
 }

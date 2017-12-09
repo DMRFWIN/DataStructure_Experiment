@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     BiTree biTree = new BiNode();
-    biTree->data='r';
+    biTree->data = 'r';
 
 
     BiNode *a = new BiNode();
@@ -70,7 +70,8 @@ int main() {
 
     Traverse(biTree);
 
-
+    cout<<endl;
+    Destroy(biTree);
 
     return 0;
 }

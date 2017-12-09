@@ -34,16 +34,40 @@ void InitBitree(BiTree &biTree) {
 }
 
 
+void Destroy(BiTree &biTree) {
+    if (biTree == NULL) {
+        return;
+    }
+    BiNode *n = biTree;
+    BiNode *c = biTree->firstchild;
+    BiNode *s = biTree->nextsibling;
+
+
+    free(biTree);
+
+    if (c != NULL) {
+        Destroy(c);
+    }
+
+    if (s != NULL) {
+        Destroy(s);
+    }
+    cout << "销毁成功～" << endl;
+}
+
 void Insertfirstchild(BiTree &biNode, BiNode *biNode1) {
+    cout << "插入firstchild成功～" << endl;
     biNode->firstchild = biNode1;
 }
 
 void Insertnextsibling(BiTree &biNode, BiNode *biNode1) {
+    cout << "插入nextsibling成功～" << endl;
     biNode->nextsibling = biNode1;
 }
 
 void Traverse(BiTree biTree) {
 
+    cout << "层次遍历：" << endl;
     queue<BiNode> sib;
 
     if (biTree == NULL) {
