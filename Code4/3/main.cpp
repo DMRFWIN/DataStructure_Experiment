@@ -6,7 +6,7 @@ using namespace std;
 
 
 int n = 0;
-#define N 8
+#define N 100
 
 void Search(SqStack s);
 
@@ -83,7 +83,7 @@ void Search(SqStack s) {
     e.x = 0;
     e.y = 1;
 
-    while (i <= 8) {
+    while (i <= N) {
 
         if (flag) {
             e.x = 0;
@@ -94,7 +94,7 @@ void Search(SqStack s) {
         }
         flag = false;
 
-        for (int j = e.x + 1; j <= 8; j++) {
+        for (int j = e.x + 1; j <= N; j++) {
             if (judge(s, j, i)) {
                 Coord e2;
                 e2.x = j;
@@ -108,7 +108,7 @@ void Search(SqStack s) {
 
 
         if (flag) {
-            if (i == 8) {
+            if (i == N) {
                 StackTraverse(s);
                 num++;
 
