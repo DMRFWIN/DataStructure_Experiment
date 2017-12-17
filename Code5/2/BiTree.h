@@ -204,7 +204,7 @@ void LevelOrderTraverse2(BiTree biTree) {
 
     queue<BiNode *> queue1;
     queue1.push(biTree);
-    BiNode *biNode;
+    BiNode *biNode=biTree;
 
     while (biNode != NULL && !queue1.empty()) {
 
