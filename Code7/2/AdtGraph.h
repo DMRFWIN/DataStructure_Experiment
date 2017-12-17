@@ -21,7 +21,7 @@ typedef struct ArcCell {
 } ArcCell, AdjMatrix[MAX_VERTEX_NUM][MAX_VERTEX_NUM];
 
 typedef struct {
-    char vexs[MAX_VERTEX_NUM];//用来存储顶点
+    int vexs[MAX_VERTEX_NUM];//用来存储顶点
     AdjMatrix arcs;//用来存储边
     int vexnum, arcnum;//顶点数和边数
     int graphKind;//图的类型
@@ -139,7 +139,7 @@ int FirstAdjVex2(MGraph G, char v) {
         }
     }
 
-   // cout << v << "没有邻顶点～" << endl;
+    // cout << v << "没有邻顶点～" << endl;
     return -1;
 }
 
@@ -179,7 +179,7 @@ int NextAdjVex2(MGraph G, char v, char u) {
     } else {
         int j = LocateVex(G, u);
         if (j == -1) {
-           // cout << u << "不在图中！" << endl;
+            // cout << u << "不在图中！" << endl;
             return -1;
         }
         if (G.arcs[i][j].adj == -1) {
@@ -191,7 +191,7 @@ int NextAdjVex2(MGraph G, char v, char u) {
                 }
             }
 
-         //   cout << "没有下一个临邻接点～" << endl;
+            //   cout << "没有下一个临邻接点～" << endl;
             return -1;
         }
     }
@@ -309,14 +309,14 @@ void DFS(MGraph G, int v) {
 
     char c = GetVex(G, v);
     cout << c << " ";
-    Visited[v]=true;
-    for (int f = FirstAdjVex2(G, c); f > 0; ){
+    Visited[v] = true;
+    for (int f = FirstAdjVex2(G, c); f > 0;) {
         if (!Visited[f]) {
             DFS(G, f);
 
         }
 
-        char k=GetVex(G,f);
+        char k = GetVex(G, f);
         f = NextAdjVex2(G, c, k);
     }
 
@@ -401,7 +401,7 @@ bool CreateDN(MGraph &G) {
 
     //初始化邻接矩阵
     for (int j = 1; j <= G.vexnum; ++j) {
-        for (int i = 1; i <=G.vexnum; ++i) {
+        for (int i = 1; i < G.vexnum; ++i) {
             G.arcs[j][i].adj = -1;
         }
     }
@@ -476,12 +476,10 @@ bool CreateUDG(MGraph &G) {
 //构造无向网
 bool CreateUDN(MGraph &G) {
 
-    //输入图的点数和边数以及点的代号
-    cout << "请输入点的个数和边的个数：" << endl;
+    //输入图的点数和边数以及点的代
     cin >> G.vexnum >> G.arcnum;
-    cout << "请输入" << G.vexnum << "个点的代号：" << endl;
     for (int i = 1; i <= G.vexnum; ++i) {
-        cin >> G.vexs[i];
+        G.vexs[i] = i;
     }
 
     //初始化邻接矩阵
@@ -491,30 +489,19 @@ bool CreateUDN(MGraph &G) {
         }
     }
 
-    cout << "请输入边的详细信息（格式：点1 点2 距离）:" << endl;
 
     for (int k = 1; k <= G.arcnum; ++k) {
-        char a, b;
+        int a, b;
         int v;
         input_arc_UDN:
         cin >> a >> b >> v;
-        int i = LocateVex(G, a);
-        int j = LocateVex(G, b);
 
-        if (i == -1 || j == -1) {
-            cout << "您输入的点有误，请重新输入该路径：" << endl;
-            goto input_arc_UDN;
-        } else if (v <= 0) {
-            cout << "您输入的距离不合法，请重新输入该路径：" << endl;
-            goto input_arc_UDN;
-        } else {
-            G.arcs[i][j].adj = v;
-            G.arcs[j][i].adj = v;
-        }
+            G.arcs[a][b].adj = v;
+            G.arcs[b][a].adj = v;
+
     }
 
 
-    cout << "创建UDN成功~" << endl;
     return true;
 }
 

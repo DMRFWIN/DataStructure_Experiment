@@ -9,6 +9,7 @@
 
 
 #include <iostream>
+#include <string>
 #include <queue>
 
 using namespace std;
@@ -18,6 +19,7 @@ typedef enum {
 
 typedef struct ArcCell {
     int adj;//边的关系类型，无权图值为0或1，有权图为权值
+    string s;
 } ArcCell, AdjMatrix[MAX_VERTEX_NUM][MAX_VERTEX_NUM];
 
 typedef struct {
@@ -43,26 +45,9 @@ void DFS(MGraph G, int v);
 
 //创建图
 bool CreateGraph(MGraph &G) {
-    cout << "请输入图的类型（0-DG 1-DN 2-UDG 3-UDN）：" << endl;
-    cin >> G.graphKind;
 
-    switch (G.graphKind) {
-        case DG:
-            return CreateDG(G);
-            break;
-        case DN:
-            return CreateDN(G);
-            break;
-        case UDG:
-            return CreateUDG(G);
-            break;
-        case UDN:
-            return CreateUDN(G);
-            break;
-        default:
-            cout << "图的类型输入错误！" << endl;
-            return false;
-    }
+    return CreateDN(G);
+
 }
 
 //销毁图
@@ -139,7 +124,7 @@ int FirstAdjVex2(MGraph G, char v) {
         }
     }
 
-   // cout << v << "没有邻顶点～" << endl;
+    // cout << v << "没有邻顶点～" << endl;
     return -1;
 }
 
@@ -179,7 +164,7 @@ int NextAdjVex2(MGraph G, char v, char u) {
     } else {
         int j = LocateVex(G, u);
         if (j == -1) {
-           // cout << u << "不在图中！" << endl;
+            // cout << u << "不在图中！" << endl;
             return -1;
         }
         if (G.arcs[i][j].adj == -1) {
@@ -191,7 +176,7 @@ int NextAdjVex2(MGraph G, char v, char u) {
                 }
             }
 
-         //   cout << "没有下一个临邻接点～" << endl;
+            //   cout << "没有下一个临邻接点～" << endl;
             return -1;
         }
     }
@@ -309,14 +294,14 @@ void DFS(MGraph G, int v) {
 
     char c = GetVex(G, v);
     cout << c << " ";
-    Visited[v]=true;
-    for (int f = FirstAdjVex2(G, c); f > 0; ){
+    Visited[v] = true;
+    for (int f = FirstAdjVex2(G, c); f > 0;) {
         if (!Visited[f]) {
             DFS(G, f);
 
         }
 
-        char k=GetVex(G,f);
+        char k = GetVex(G, f);
         f = NextAdjVex2(G, c, k);
     }
 
@@ -401,18 +386,19 @@ bool CreateDN(MGraph &G) {
 
     //初始化邻接矩阵
     for (int j = 1; j <= G.vexnum; ++j) {
-        for (int i = 1; i <=G.vexnum; ++i) {
+        for (int i = 1; i <= G.vexnum; ++i) {
             G.arcs[j][i].adj = -1;
         }
     }
 
-    cout << "请输入边的详细信息（格式：点1 点2 距离）:" << endl;
+    cout << "请输入边的详细信息（格式：点1 点2 边的代号 距离）:" << endl;
 
     for (int k = 1; k <= G.arcnum; ++k) {
         char a, b;
+        string s;
         int v;
         input_arc_UDN4:
-        cin >> a >> b >> v;
+        cin >> a >> b >> s >> v;
         int i = LocateVex(G, a);
         int j = LocateVex(G, b);
 
@@ -424,9 +410,10 @@ bool CreateDN(MGraph &G) {
             goto input_arc_UDN4;
         } else {
             G.arcs[i][j].adj = v;
+            G.arcs[i][j].s = s;
+            G.arcs[j][i].s = s;
         }
     }
-
 
     cout << "创建DN成功~" << endl;
     return true;
