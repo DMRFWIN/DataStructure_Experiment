@@ -3,12 +3,39 @@
 
 using namespace std;
 
-int ChooseMin(int *a, int len);
+void SelectSort(vector<int> v);
+
+void MSort(vector<int> v);
+
+void ExchangeSort(vector<int> a, int len);
 
 int main() {
+
+    vector<int> v;
+    v.push_back(456);
+    v.push_back(34);
+    v.push_back(29);
+    v.push_back(199);
+    v.push_back(5);
+
+
+    cout<<"交换排序：";
+    ExchangeSort(v,5);
+
+    cout<<"选择排序：";
+    SelectSort(v);
+
+    cout<<"归并排序：";
+    MSort(v);
     return 0;
 }
 
+void show(vector<int> v) {
+    for (int i = 0; i < v.size(); ++i) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
 
 /*
  * 选择排序
@@ -29,8 +56,9 @@ void SelectSort(vector<int> v) {
         int t;
         t = v[min];
         v[min] = v[i];
-        v[i] = v[min];
+        v[i] = t;
     }
+    show(v);
 }
 
 
@@ -40,6 +68,7 @@ void SelectSort(vector<int> v) {
  * S(n)=O(n)
  * 稳定
  */
+
 
 
 void MSort(vector<int> v) {
@@ -78,15 +107,13 @@ void MSort(vector<int> v) {
 
         v = h;
     }
-
+    show(v);
 
 }
 
 
-
-
 //交换排序
-void ExchangeSort(int *a, int len) {
+void ExchangeSort(vector<int> a, int len) {
     for (int i = 0; i < len - 1; ++i) {
         for (int j = i + 1; j < len; ++j) {
             if (a[i] > a[j]) {
@@ -99,9 +126,6 @@ void ExchangeSort(int *a, int len) {
 
     }
 
-    for (int k = 0; k < len; ++k) {
-        cout << a[k] << " ";
-    }
-    cout << endl;
+    show(a);
 }
 

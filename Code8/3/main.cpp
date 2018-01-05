@@ -7,9 +7,25 @@ void QSort(vector<int> &v, int low, int high);
 
 int Partition(vector<int> &v, int low, int high);
 
+void QuickSort(vector<int> v);
+
 int main() {
-    std::cout << "Hello, Wo速排序算法rld!" << std::endl;
+
+    vector<int> v;
+    v.push_back(456);
+    v.push_back(34);
+    v.push_back(29);
+    v.push_back(199);
+    v.push_back(5);
+    QuickSort(v);
     return 0;
+}
+
+void show(vector<int> v) {
+    for (int i = 0; i < v.size(); ++i) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
 }
 
 /*
@@ -21,9 +37,14 @@ int main() {
 
 void QuickSort(vector<int> v) {
     QSort(v, 0, v.size() - 1);
+    show(v);
 }
 
 void QSort(vector<int> &v, int low, int high) {
+
+    if (low >= high) {
+        return;
+    }
     int t = Partition(v, low, high);
     QSort(v, low, t - 1);
     QSort(v, t + 1, high);
@@ -52,4 +73,5 @@ int Partition(vector<int> &v, int low, int high) {
 
     return low;
 }
+
 

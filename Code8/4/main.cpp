@@ -1,18 +1,32 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 void HeapAdjust(vector<int> &v, int s, int m);
 
+void HeapSort(vector<int> v);
 
 int main() {
 
-    system("time");
-    // getNum();
+
+    vector<int> v;
+    v.push_back(456);
+    v.push_back(34);
+    v.push_back(29);
+    v.push_back(199);
+    v.push_back(5);
+    HeapSort(v);
     return 0;
 }
 
 
+void show(vector<int> v) {
+    for (int i = 0; i < v.size(); ++i) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
 
 /*
  * 堆排序
@@ -20,6 +34,7 @@ int main() {
  * S(n)=O(1)
  * 不稳定
  */
+
 
 void HeapSort(vector<int> v) {
     vector<int> n_v;
@@ -40,11 +55,13 @@ void HeapSort(vector<int> v) {
         v[j] = t;
         HeapAdjust(v, 1, j - 1);
     }
+    int t = v[1];
+    n_v.push_back(t);
 
     /*
      * n_v即为排好序的vector
      */
-
+    show(n_v);
 }
 
 void HeapAdjust(vector<int> &v, int s, int m) {

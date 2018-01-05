@@ -5,12 +5,25 @@
 using namespace std;
 
 int GetMaxBit(vector<int> v);
+void radixSort(vector<int> v);
 
 int main() {
+     vector<int> v;
+    v.push_back(456);
+    v.push_back(34);
+    v.push_back(29);
+    v.push_back(199);
+    v.push_back(5);
+    radixSort(v);
     return 0;
 }
 
-
+void show(vector<int> v) {
+     for (int i = 0; i < v.size(); ++i) {
+         cout << v[i] << " ";
+     }
+     cout << endl;
+}
 /*
  * 基数排序
  * T(n)=O(d*n) d为排序数中最大数的位数
@@ -31,18 +44,19 @@ void radixSort(vector<int> v) {
         for (int j = 0; j < v.size(); ++j) {
             int t;
             t = (v[j] / radix) % 10;
-            q[t].push(t);
+            q[t].push(v[j]);
         }
 
         int p = 0;
         for (int k = 0; k < 10; ++k) {
             while (!q[k].empty()) {
                 v[p++] = q[k].front();
-                q->pop();
+                q[k].pop();
             }
         }
         radix *= 10;
     }
+    show(v);
 
 }
 
@@ -60,4 +74,5 @@ int GetMaxBit(vector<int> v) {
     return d;
 
 }
+
 
