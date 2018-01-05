@@ -9,7 +9,8 @@ using namespace std;
 int main() {
 
     /*
- * a f 100
+ *
+a f 100
 a e 30
 a c 10
 b c 5
